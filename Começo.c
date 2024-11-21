@@ -122,6 +122,7 @@ int main() //sempre a primeira função a aparecer mesmo que não seja a primeira e
 		printf("\t\t1- Registrar aluno\n");
 		printf("\t\t2- Consultar aluno\n");
 		printf("\t\t3- Deletar aluno\n\n");
+		printf("\t\t4- Sair\n\n");
 		printf("Opção: "); //fim do menu
 		
 		scanf("%d", &opcao); //armazenando escolha do usuário
@@ -141,6 +142,10 @@ int main() //sempre a primeira função a aparecer mesmo que não seja a primeira e
 			case 3: //atribuí o numero 3
 			delecao(); //chamei a função deleção
 			break; //fechei a relação
+			
+			case 4:
+			printf("Obrigado!");
+			return 0;
 			
 			default: //todo o resto
 			printf("Opção inválida.\n");
